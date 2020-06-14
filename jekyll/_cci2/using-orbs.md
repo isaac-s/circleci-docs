@@ -120,16 +120,16 @@ Orbs are published with the standard 3-number semantic versioning system:
 - minor
 - patch
 
-Orb authors should adhere to semantic versioning. Within config.yml, you may specify wildcard version ranges to resolve orbs. You may also use the special string volatile to pull in whatever the highest version number is at time your build runs.
+Orb authors should adhere to semantic versioning. Within config.yml, you may specify wildcard version ranges to resolve orbs. You may also use the special string `volatile` to pull in whatever the highest version number is at time your build runs.
 
-For example, when mynamespace/some-orb@8.2.0 exists, and mynamespace/some-orb@8.1.24 and mynamespace/some-orb@8.0.56 are published after 8.2.0, volatile will still refer to mynamespace/some-orb@8.2.0 as the highest semantic version.
+For example, when `mynamespace/some-orb@8.2.0` exists, and `mynamespace/some-orb@8.1.24` and `mynamespace/some-orb@8.0.56` are published after `8.2.0`, `volatile` will still refer to `mynamespace/some-orb@8.2.0` as the highest semantic version.
 
 Examples of orb version declarations and their meaning:
 
-* circleci/python@volatile - use the highest version of the Python orb in the registry at the time a build is triggered. This is likely the most recently published and least stable Python orb.
-* circleci/python@2 - use the latest version of version 2.x.y of the Python orb.
-* circleci/python@2.4 - use the latest version of version 2.4.x of the Python orb.
-* circleci/python@3.1.4 - use exactly version 3.1.4 of the Python orb.
+* `circleci/python@volatile` - use the highest version of the Python orb in the registry at the time a build is triggered. This is likely the most recently published and least stable Python orb.
+* `circleci/python@2` - use the latest version of version 2.x.y of the Python orb.
+* `circleci/python@2.4` - use the latest version of version 2.4.x of the Python orb.
+* `circleci/python@3.1.4` - use exactly version 3.1.4 of the Python orb.
 
 ## Orb Versions (Development vs. Production)
 
